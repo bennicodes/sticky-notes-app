@@ -1,4 +1,5 @@
 import { v4 as uuidv4 } from "uuid";
+import storeNotes from "./storeNotes.js";
 
 const generateRandomNumber = () => {
   // Random number generator
@@ -19,7 +20,7 @@ const addNotes = (subject, date, text) => {
   notesArray.push(note);
   console.log(notesArray);
 
-  //   storeNotes()
+  storeNotes(notesArray);
 };
 
 export default addNotes;
