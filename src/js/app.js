@@ -1,4 +1,5 @@
 import addNotes from "./addNotes.js";
+import renderNotes from "./renderNotes.js";
 
 const form = document.querySelector(".form");
 const subjectInput = document.querySelector(".form__subject-input");
@@ -9,4 +10,5 @@ const noteText = document.querySelector(".form__note-input");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   addNotes(subjectInput, dateInput, noteText);
+  renderNotes();
 });
