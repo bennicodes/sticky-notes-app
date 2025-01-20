@@ -18,8 +18,6 @@ const addNotes = (subject, date, text) => {
     rotation: generateRandomNumber(),
   };
   notesArray.push(note);
-  console.log(notesArray);
-
   storeNotes(notesArray);
 };
 
